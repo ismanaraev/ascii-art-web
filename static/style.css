@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.writing {
+	color: #00ff00
+}
+
+.container {
+	width: 1600px;
+}
+
+.main__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main__content {
+	text-align: left;
+	color: lime;
+}
+
+.main__output {
+	color: lime;
+	background:black;	
+}
+
+
+input {
+	padding: 15px;
+	background: linear-gradient(0deg, rgb(150,150,150), rgb(300,300,300));	
+	font-size: 20px;
+}
+
+label {
+	font-size: 20px;
+}
+
+select, option {
+	font-size: 20px;
+	background: lime;
+}
+
+button {
+	font-size: 20px;
+	background: lime;
+	color: black;
+}
+textarea {
+	font-size: 20px;
+	background: black;
+	color: lime;
+}
+
+h2 {
+	color: lime;
+}
+
+

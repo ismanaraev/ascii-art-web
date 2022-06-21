@@ -1,0 +1,45 @@
+{
+	"port": "8080",
+	"fonts": [
+		{
+			"fontname": "doom",
+			"file": "ascii/doom.txt",
+			"linenum": "855",
+			"charset": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+			"height": "8",
+			"gaps": "1"
+		},
+		{
+			"fontname": "standard",
+			"file": "ascii/standard.txt",
+			"linenum": "855",
+			"charset": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+			"height": "8",
+			"gaps": "1"
+		},
+		{
+			"fontname": "thinkertoy",
+			"file": "ascii/thinkertoy.txt",
+			"linenum": "855",
+			"charset": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+			"height": "8",
+			"gaps": "1"
+		},
+		{
+			"fontname": "shadow",
+			"file": "ascii/shadow.txt",
+			"linenum": "855",
+			"charset": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+			"height": "8",
+			"gaps": "1"
+		},
+		{
+			"fontname": "rammstein",
+			"file": "ascii/Rammstein.flf",
+			"linenum": "714",
+			"charset": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+			"height": "7",
+			"gaps": "0"
+		}
+	]
+}
