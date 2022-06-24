@@ -34,7 +34,7 @@ func (H *Handler) AsciiArtMainPage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if r.Method != "GET" {
-		herrors.Error(http.StatusMethodNotAllowed, err, w)
+		herrors.Error(http.StatusMethodNotAllowed, errors.New("invalid method"), w)
 		return
 	}
 	if r.RequestURI != "/" {
