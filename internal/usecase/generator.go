@@ -3,6 +3,7 @@ package usecase
 import (
 	"ascii-art-web/internal/entity"
 	"errors"
+	"sort"
 	"strings"
 )
 
@@ -22,6 +23,7 @@ func (g generator) GetFontList() []string {
 	for font := range g.Fonts {
 		res = append(res, font)
 	}
+	sort.Strings(res)
 	return res
 }
 
@@ -53,11 +55,11 @@ func (g generator) CheckUserInput(input, font string, width int) error {
 
 //This is the core function, it hyphenates input using hyphenate, then forms a string with resulting ascii-art from input
 func (g generator) Generate(input, font string, width int) string {
-	sb := strings.Builder{}
+	var sb strings.Builder
 	lines := g.hyphenate(input, font, width)
 	for _, line := range lines {
 		if line == "" {
-			sb.WriteByte(10) //10 is \n
+			sb.WriteByte(10)
 			continue
 		}
 		for i := 0; i < g.Fonts[font].Height; i++ {
@@ -77,6 +79,9 @@ func (g *generator) hyphenate(input, font string, width int) []string {
 	var word string
 	var newinputlines []string
 	s := strings.Split(input, "\n")
+	if len(s) > len(input) {
+		s = s[1:]
+	}
 	tw := width
 	charmap := g.Fonts[font].Charmap
 	for _, item := range s {

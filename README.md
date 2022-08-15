@@ -20,7 +20,5 @@ if required, port can be changed either by editing config/config.json or setting
 
 ### Algorithm
 
-The main logic of the ascii-art is located at pkg directory. There's a package that generates ascii-art independently from server. 
-The server architechture is following clean-architechture rules. The main handlers and registry is located at internal/api/delievery.
-
+The project is built following the concept of Clean Architecture. The main entity is an ascii-font which is defined in entity folder, the entity also defines main interface which is used to generate art.
 

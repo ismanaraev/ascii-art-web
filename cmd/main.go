@@ -2,7 +2,7 @@ package main
 
 import (
 	"ascii-art-web/internal/controller"
-	"ascii-art-web/internal/delievery"
+	"ascii-art-web/internal/delivery"
 	"log"
 	"os"
 )
@@ -17,7 +17,7 @@ func main() {
 		log.Print(err)
 		return
 	}
-	err = delievery.StartServer(generator)
+	err = delivery.StartServer(generator)
 	if err != nil {
 		log.Print(err)
 		return

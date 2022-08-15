@@ -11,7 +11,7 @@ function makeRequest() {
 		document.getElementById("result").innerHTML = "";
 		return
 	}
-	let width = window.innerWidth / 7.25;
+	let width = window.innerWidth / 6.50;
 	width = parseInt(width)
 	req = 'font=' + font + '&width=' + width + '&input=' + text;
 	httpRequest = new XMLHttpRequest();

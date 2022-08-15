@@ -5,9 +5,6 @@
 		<meta name="viewport" content="width=device-width, inital-scale=1.0">
 		<link href="static/style.css" rel="stylesheet">
 		<title>ASCII-ART</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
@@ -19,9 +16,18 @@
 		<main class="main">
 			<div class="container">
 				<div class="main__row">
+               
 					<div class="main__content">
 						<a href="/" style="text-decoration:none">
-							<h1> ASCII-ART-WEB <h1>
+						<pre class="writing">
+  ___   _____  _____  _____  _____           ___  ______  _____        _    _  _____ ______            
+ / _ \ /  ___|/  __ \|_   _||_   _|         / _ \ | ___ \|_   _|      | |  | ||  ___|| ___ \           
+/ /_\ \\ `--. | /  \/  | |    | |   ______ / /_\ \| |_/ /  | |        | |  | || |__  | |_/ /           
+|  _  | `--. \| |      | |    | |  |______||  _  ||    /   | |        | |/\| ||  __| | ___ \           
+| | | |/\__/ /| \__/\ _| |_  _| |_         | | | || |\ \   | |        \  /\  /| |___ | |_/ /           
+\_| |_/\____/  \____/ \___/  \___/         \_| |_/\_| \_|  \_/         \/  \/ \____/ \____/            
+                                                                                                       
+						</pre>
 						</a>
 						<form id="ascii-form" action="/ascii-art" method="post">
 						<label for="font" class="writing">Choose banner</label>
@@ -33,10 +39,10 @@
 						<br/> 
 						<input type="hidden" oninput="makeRequest()" name="width" id="width" value="300" />
 						<br/>
-						<textarea oninput="makeRequest()" id="input" name="input" required></textarea> <br/>
+						<textarea oninput="makeRequest()" rows="10" cols="50" id="input" name="input" required></textarea>
+						<br/>
 						<br/>
 						<button type="submit" value="submit">Send</button>
-						<button type="submit" formaction="/download" value="submit">Download</button>
 						</form>
 						<button onclick="clearOutput()">Clear</button>
 						<button onclick="copyText()">Copy</button>
@@ -48,8 +54,7 @@
 			</div>
 		
 		</main>
-			</div>
-	<div class="main__output">
+		<div class="main__output">
 		<h2>Output</h2>
 			<div>	
 				<div>
@@ -61,7 +66,8 @@
 			<div class="container">
 			</div>
 		</footer>
-<script src="/static/main.js">
+	</div>
+	<script src="/static/main.js">
 	</script>
 	</body>
 </html>

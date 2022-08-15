@@ -1,5 +1,10 @@
 * {
 	box-sizing: border-box;
+	font-family: 'VT323', monospace;
+}
+
+.main__content a:visited {
+color: lime; 
 }
 
 html, body {
@@ -13,7 +18,8 @@ html, body {
 }
 
 .container {
-	width: 1600px;
+	display: flex;
+	flex-direction: column;
 }
 
 .main__row {
@@ -27,6 +33,7 @@ html, body {
 }
 
 .main__output {
+	line-height: 1;
 	color: lime;
 	background:black;	
 }
@@ -45,15 +52,25 @@ label {
 select, option {
 	font-size: 20px;
 	background: lime;
+	border: 2px solid green;
 }
 
 button {
 	font-size: 20px;
 	background: lime;
 	color: black;
+	border: 2px solid green;
 }
+textarea:focus {
+  outline: 2px solid lime;
+}
+
 textarea {
+	font-family: 'VT323', monospace;
+	height: 100%;
+	width: 100%;
 	font-size: 20px;
+	border: 2px solid green;
 	background: black;
 	color: lime;
 }
@@ -62,4 +79,6 @@ h2 {
 	color: lime;
 }
 
-
+result {
+	width: 100%;
+}

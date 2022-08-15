@@ -51,5 +51,6 @@ func (a *asciifont) createFontCharmap(allchars []string) {
 		ct++
 	}
 	tmpmap["\n"] = []string{"", "", "", "", "", "", "", ""}
+	tmpmap["\r"] = []string{"", "", "", "", "", "", "", ""}
 	a.charmap = tmpmap
 }
